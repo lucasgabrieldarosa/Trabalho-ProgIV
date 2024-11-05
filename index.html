@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Coleta de Informações</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Formulário De Dados</h2>
+
+    <div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="Tele">Telefone:</label>
+            <input type="text" name="Telefone" id="Telefone">
+        </div>
+
+        <div>
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="date" name="nasc" id="nasc">
+        </div>
+           
+        <label for="genero">Gênero:</label>
+        <select id="genero" required>
+          <option value="">Selecione</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outro">Outro</option>
+        </select>
+
+        </div>
+        <button type="button" class="botao" onclick="displayInfo()">Enviar</button>
+        </form>
+        <div class="resultado" id="result"></div>
+        </div>
+
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
